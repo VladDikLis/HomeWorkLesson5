@@ -38,7 +38,7 @@ public class Lesson5HomeWork {
         if (me == 3) {
             System.out.println("Выбран метод massReplaceInt.");
             int[] arr = new int[10];
-            for (int i=0; i < 10; i++) {
+            for (int i = 0; i < 10; i++) {
                 arr[i] = (int) (Math.random() * 10);
             }
             System.out.print("Исходный массив: ");
@@ -51,7 +51,7 @@ public class Lesson5HomeWork {
         if (me == 4) {
             System.out.println("Выбран метод massSumInt.");
             int[] arr = new int[10];
-            for (int i=0; i < 10; i++) {
+            for (int i = 0; i < 10; i++) {
                 arr[i] = (int) (Math.random() * 10);
             }
             System.out.print("Исходный массив: ");
@@ -64,7 +64,7 @@ public class Lesson5HomeWork {
         if (me == 5) {
             System.out.println("Выбран метод sumHalf.");
             int[] arr = new int[10];
-            for (int i=0; i < 10; i++) {
+            for (int i = 0; i < 10; i++) {
                 arr[i] = (int) (Math.random() * 10);
             }
             System.out.print("Исходный массив: ");
@@ -75,19 +75,19 @@ public class Lesson5HomeWork {
         if (me == 6) {
             System.out.println("Выбран метод sumMassDifferent.");
             int[] arr1 = new int[2];
-            for (int i=0; i < 2; i++) {
+            for (int i = 0; i < 2; i++) {
                 arr1[i] = (int) (Math.random() * 10);
             }
             System.out.print("Исходный массив 1: ");
             System.out.println(Arrays.toString(arr1));
             int[] arr2 = new int[6];
-            for (int i=0; i < 6; i++) {
+            for (int i = 0; i < 6; i++) {
                 arr2[i] = (int) (Math.random() * 10);
             }
             System.out.print("Исходный массив 2: ");
             System.out.println(Arrays.toString(arr2));
             int[] arr3 = new int[4];
-            for (int i=0; i < 4; i++) {
+            for (int i = 0; i < 4; i++) {
                 arr3[i] = (int) (Math.random() * 10);
             }
             System.out.print("Исходный массив 3: ");
@@ -98,8 +98,8 @@ public class Lesson5HomeWork {
         if (me == 7) {
             System.out.println("Выбран метод sumLeftRight.");
             int[] arr = new int[10];
-            for (int i=0; i < 10; i++) {
-                arr[i] =  1;  //(int) (Math.random() * 10); // Рандом отключен, сложно поймать ситуацию
+            for (int i = 0; i < 10; i++) {
+                arr[i] = 1;  //(int) (Math.random() * 10); // Рандом отключен, сложно поймать ситуацию
             }
             System.out.print("Исходный массив: ");
             System.out.println(Arrays.toString(arr));
@@ -111,8 +111,8 @@ public class Lesson5HomeWork {
             System.out.println("Выберите вариант проверки: 1 - В порядке возрастания?  2 - В порядке убывания?");
             int a = scanner.nextInt();
             int[] arr = new int[3];
-            for (int i=0; i < 3; i++) {
-                arr[i] =  (int) (Math.random() * 10);
+            for (int i = 0; i < 3; i++) {
+                arr[i] = (int) (Math.random() * 10);
             }
             System.out.print("Исходный массив: ");
             System.out.println(Arrays.toString(arr));
@@ -122,8 +122,8 @@ public class Lesson5HomeWork {
         if (me == 9) {
             System.out.println("Выбран метод massReverse.");
             int[] arr = new int[5];
-            for (int i=0; i < 5; i++) {
-                arr[i] =  (int) (Math.random() * 10);
+            for (int i = 0; i < 5; i++) {
+                arr[i] = (int) (Math.random() * 10);
             }
             System.out.print("Исходный массив: ");
             System.out.println(Arrays.toString(arr));
@@ -132,21 +132,21 @@ public class Lesson5HomeWork {
     }
 
     public static void replayString(String a, int b) {
-        for (int i=0; i < b; i++) {
+        for (int i = 0; i < b; i++) {
             System.out.println(a);
         }
     }
 
     public static void massSum5() {
         int[] arr = new int[10];
-        for (int i=0; i < 10; i++) {
+        for (int i = 0; i < 10; i++) {
             arr[i] = (int) (Math.random() * 10);
         }
         System.out.print("Исходный массив: ");
         System.out.println(Arrays.toString(arr));
         int sum = 0;
-        for (int i=0; i < 10; i++) {
-            if (arr[i] > 5){
+        for (int i = 0; i < 10; i++) {
+            if (arr[i] > 5) {
                 sum = sum + arr[i];
             }
         }
@@ -154,7 +154,7 @@ public class Lesson5HomeWork {
     }
 
     public static void massReplaceInt(int[] arr, int a) {
-        for (int i=0; i < 10; i++) {
+        for (int i = 0; i < 10; i++) {
             arr[i] = a;
         }
         System.out.print("Итоговый массив: ");
@@ -162,7 +162,7 @@ public class Lesson5HomeWork {
     }
 
     public static void massSumInt(int[] arr, int a) {
-        for (int i=0; i < 10; i++) {
+        for (int i = 0; i < 10; i++) {
             arr[i] = arr[i] + a;
         }
         System.out.print("Итоговый массив: ");
@@ -172,10 +172,10 @@ public class Lesson5HomeWork {
     public static void sumHalf(int[] arr) {
         int sum1 = 0;
         int sum2 = 0;
-        for (int i=0; i < 5; i++) {
+        for (int i = 0; i < 5; i++) {
             sum1 = sum1 + arr[i];
         }
-        for (int i=5; i < 10; i++) {
+        for (int i = 5; i < 10; i++) {
             sum2 = sum2 + arr[i];
         }
         if (sum1 > sum2) {
@@ -190,29 +190,29 @@ public class Lesson5HomeWork {
     }
 
     public static void sumMassDifferent(int[] arr1, int[] arr2, int[] arr3) {
-       int Larr1 = arr1.length;
-       int Larr2 = arr2.length;
-       int Larr3 = arr3.length;
-       int max = 0;
-       int x = 0;
+        int Larr1 = arr1.length;
+        int Larr2 = arr2.length;
+        int Larr3 = arr3.length;
+        int max = 0;
+        int x = 0;
         max = Math.max(Larr1, Larr2);
-       if (Larr3 > max) {
-           max = Larr3;     // Нашли самый длинный массив, работаем от него.
-       }
-       int[] arr4 = new int[max];   // Создаём новый массив нужной длинны, куда бросаем результат
-       for (int i=0; i < max; i++) {
-           x = 0;
-           if (i < Larr1) {      // Если мы ещё не вышли за диапазон массива, складываем результат
-               x = x + arr1[i];
-           }
-           if (i < Larr2) {
-               x = x + arr2[i];
-           }
-           if (i < Larr3) {
-               x = x + arr3[i];
-           }
-           arr4[i] = x;
-       }
+        if (Larr3 > max) {
+            max = Larr3;     // Нашли самый длинный массив, работаем от него.
+        }
+        int[] arr4 = new int[max];   // Создаём новый массив нужной длинны, куда бросаем результат
+        for (int i = 0; i < max; i++) {
+            x = 0;
+            if (i < Larr1) {      // Если мы ещё не вышли за диапазон массива, складываем результат
+                x = x + arr1[i];
+            }
+            if (i < Larr2) {
+                x = x + arr2[i];
+            }
+            if (i < Larr3) {
+                x = x + arr3[i];
+            }
+            arr4[i] = x;
+        }
         System.out.print("Сумма массивов: ");
         System.out.println(Arrays.toString(arr4));
     }
@@ -220,14 +220,14 @@ public class Lesson5HomeWork {
     public static void sumLeftRight(int[] arr) {
         System.out.print("Итоговый массив: [ ");
         int z = 0;   // Метка статуса
-        for (int i=0; i < 10; i++) {
+        for (int i = 0; i < 10; i++) {
             System.out.print(arr[i] + " ");
             int x = 0;   // Сумма первой части
             int y = 0;   // Сумма второй части
-            for (int j=0; j < i + 1; j++) {
+            for (int j = 0; j < i + 1; j++) {
                 x = x + arr[j];
             }
-            for (int k=i + 1; k < 10; k++) {
+            for (int k = i + 1; k < 10; k++) {
                 y = y + arr[k];
             }
             if (x == y) {
@@ -243,16 +243,16 @@ public class Lesson5HomeWork {
 
     public static void massSortCheck(int[] arr, int a) {
         if (a == 1) {
-            for (int i=1; i < 3; i++) {
-                if (arr[i] < arr[i-1]) {
+            for (int i = 1; i < 3; i++) {
+                if (arr[i] < arr[i - 1]) {
                     System.out.print("Ряд расположен не в порядке возрастания");
                     System.exit(0);
                 }
             }
         }
         if (a == 2) {
-            for (int i=1; i < 3; i++) {
-                if (arr[i] > arr[i-1]) {
+            for (int i = 1; i < 3; i++) {
+                if (arr[i] > arr[i - 1]) {
                     System.out.print("Ряд расположен не в порядке убывания");
                     System.exit(0);
                 }
@@ -270,8 +270,8 @@ public class Lesson5HomeWork {
         int Larr = arr.length;
         int[] arrN = new int[Larr];
         Larr = Larr - 1;
-        for (int i=0; i < 5; i++) {
-            arrN[i] = arr[Larr-i];
+        for (int i = 0; i < 5; i++) {
+            arrN[i] = arr[Larr - i];
         }
         System.out.print("Итоговый массив: ");
         System.out.println(Arrays.toString(arrN));
